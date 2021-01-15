@@ -8,7 +8,14 @@ Before diving into ARCore, it's helpful to understand a few fundamental concepts
 
 ## Motion tracking
 
-As your phone moves through the world, ARCore uses a process called  [simultaneous localization and mapping](https://en.wikipedia.org/wiki/Simultaneous_localization_and_mapping), or SLAM, to understand where the phone is relative to the world around it. ARCore detects visually distinct features in the captured camera image called  **feature points**  and uses these points to compute its change in location. The visual information is combined with inertial measurements from the device's IMU to estimate the  **pose**  (position and orientation) of the camera relative to the world over time.
+As your phone moves through the world, ARCore uses a process called  [simultaneous localization and mapping](https://en.wikipedia.org/wiki/Simultaneous_localization_and_mapping), or SLAM, to understand where the phone is relative to the world around it. 
+> Note: SLAM:
+See the screenshot from Wiki page:
+
+
+
+
+ARCore detects visually distinct features in the captured camera image called  **feature points**  and uses these points to compute its change in location. The visual information is combined with inertial measurements from the device's IMU to estimate the  **pose**  (position and orientation) of the camera relative to the world over time.
 
 By aligning the pose of the virtual camera that renders your 3D content with the pose of the device's camera provided by ARCore, developers are able to render virtual content from the correct perspective. The rendered virtual image can be overlaid on top of the image obtained from the device's camera, making it appear as if the virtual content is part of the real world.
 
@@ -76,5 +83,5 @@ Start putting these concepts into practice by building AR experiences on the pla
 -   [Quickstart: iOS](https://developers.google.com/ar/develop/ios/cloud-anchors-quickstart-ios)
 -   [Quickstart: Unreal](https://developers.google.com/ar/develop/unreal/quickstart)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0NzIxMDE2Nl19
+eyJoaXN0b3J5IjpbLTEzNTY5MjA5NjIsMTI0NzIxMDE2Nl19
 -->
